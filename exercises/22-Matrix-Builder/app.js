@@ -2,5 +2,20 @@
 
 
 
+function matrixBuilder(n){
+    let matrix=[]
+
+    for(let i=0;i<n;i++){
+        let row=[]
+        for(let k=0;k<n;k++){
+            let randomValue = Math.floor(Math.random() + 0.5);
+        row.push(randomValue);
+        }
+        matrix.push(row);
+
+    }
+    return matrix;
+}
+
 // Do not change anything from this line down
-console.log(matrixBuilder(5))
+console.log(matrixBuilder(5));
